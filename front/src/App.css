@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Prompt:wght@200;300&family=Varela+Round&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: #BDF2ED;
+}
+
+.navbar{
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content:space-between;
+  align-items: stretch;
+  gap: 1rem;
+  padding: .50rem 1rem;
+  user-select: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+
+.navbar_register{
+  background-color: #AAF0FF;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.navbar ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li:hover{
+  background-color: aliceblue;
+} 
+
+.navbar_logout{
+  cursor: pointer;
+}
+
+.topsection-serch{
+  margin: 100px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  margin-right: -1px;
+}
+input:focus{
+  outline: none;
+}
+
+button {
+  background-color: #75DFF6;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: -1px;
+	user-select: none;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.bottomsection-serch{
+  background-color: white;
+  margin: 4rem;
+  padding: 3rem;
+  border-radius: 60px 60px 0px 0px;
+  bottom: 0;
+}
+
+.patient{
+  background-color: white;
+  margin: 4rem;
+  padding: 3rem;
+  border-radius: 60px;
+  bottom: 0;
+}
+
+.patient-top{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.patient-table{
+
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr{
+  border-bottom: 1px solid #ddd;
+  /* border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; */
+}
+
+table tr:hover {
+  background-color: rgb(251, 251, 251);
+}
+
+table tr th {
+  text-align: left;
+  color: #157B82;
+  padding: 1rem 2rem;
+  background-color: #D7F8F8;
+}
+
+table tr td {
+  text-align: left;
+  line-height: 3rem;
+  padding: .5rem 2rem;
+  /* background-color: #E5FDFD; */
+  /* padding: 5px 0px 5px 10px; */
+}
+
+.moreinfo-button{
+  background-color: #AAF0FF;
+  border: none;
+  padding: .5rem 2rem;
+}
+
+.moreinfo-button:hover{
+  background-color: #43ddff;
+}
+
+.patient-nav{
+  /* padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  background-color: #DCF7F5; */
+
+  background-color: #DCF7F5;
+  color: black;
+  display: flex;
+  justify-content:space-between;
+  align-items: stretch;
+  gap: 1rem;
+  padding: .50rem 1rem;
+  user-select: none;
+}
+
+.patient-nav a{
+  text-decoration: none;
+  color: inherit; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+
+.patient-nav li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.patient-nav li:hover{
+  background-color: #7FEEE8;
+}
