@@ -89,7 +89,10 @@ button {
   margin: 4rem;
   padding: 3rem;
   border-radius: 60px 60px 0px 0px;
+  /* position: absolute;
   bottom: 0;
+  min-height: calc(100% - 15rem);
+  margin: 0 calc(20%); */
 }
 
 .patient{
@@ -150,41 +153,116 @@ table tr td {
   background-color: #43ddff;
 }
 
-.patient-nav{
-  /* padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  background-color: #DCF7F5; */
+.patient-table table{
+  border-collapse:separate;
+  width: 20%
+}
 
-  background-color: #DCF7F5;
+.patient-table table tr{
+  border-bottom: none;
+  /* border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; */
+}
+
+.patient-table table tr th {
   color: black;
-  display: flex;
-  justify-content:space-between;
-  align-items: stretch;
-  gap: 1rem;
-  padding: .50rem 1rem;
-  user-select: none;
+  padding: .25rem .5rem;
+  background-color: white;
 }
 
-.patient-nav a{
-  text-decoration: none;
-  color: inherit; 
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: .25rem;
+.patient-table table tr td {
+  line-height: 2rem;
+  padding: 0rem 1rem;
+  background-color:#D9D9D9;
+  /* background-color: #E5FDFD; */
+  /* padding: 5px 0px 5px 10px; */
 }
 
-.patient-nav li{
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.patient-tab{
   display: flex;
-  gap: 1rem;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
-.patient-nav li:hover{
-  background-color: #7FEEE8;
+.patient-tab input[type="radio"]{
+  display: none;
+}
+
+.patient-tab label{
+  overflow-x: auto;
+  padding: 15px 25px;
+  border-radius: 0px 0px 0px 0px;
+  background:#DCF7F5;
+  cursor: pointer;
+  /* width: 25%; */
+}
+
+
+.patient-tab .tab{
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  max-width: fit-content;
+  order: 1; 
+  /* order is position of [] -> 0 1 2 st nd rd */
+  display: none;
+  
+}
+
+.patient-tab input[type="radio"]:checked + label + .tab{
+  display: block;
+}
+
+.patient-tab input[type="radio"]:checked + label{
+  background:#7FEEE8;
+  color: black;
+  border-bottom: 3px solid #29B8D8!important;
+  
+}
+.patient-tab label:hover{
+  color: #29B8D8;
+  border-bottom: 2px solid #29B8D8!important;
+  
+}
+.tab{
+  box-shadow: 0 0.5rem 0.8rem ;
+}
+
+.intab{
+  display: grid;
+  grid-template-columns: 20% 20%;
+  /* display: flex; */
+  width: 76rem
+}
+
+.patient-table-intab table{
+  border-collapse:separate;
+  width: 100%
+}
+
+.patient-table-intab tr{
+  border-bottom: none;
+  /* border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; */
+}
+
+.patient-table-intab table tr th {
+  color: black;
+  padding: .25rem .5rem;
+  background-color: white;
+}
+
+.patient-table-intab table tr td {
+  line-height: 2rem;
+  padding: 0rem 1rem;
+  background-color:#D9D9D9;
+  /* background-color: #E5FDFD; */
+  /* padding: 5px 0px 5px 10px; */
+}
+
+h1{
+  margin: 3rem  0rem 0rem 4rem;
+}
+
+h2 {
+	font-size: 35px;
 }

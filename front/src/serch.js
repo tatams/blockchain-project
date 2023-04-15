@@ -41,7 +41,7 @@ export default function Serch() {
   const infor_click = () =>{
     Swal.fire({
       title: 'รหัสผ่าน',
-      input: 'text',
+      input: 'password',
       inputAttributes: {
         autocapitalize: 'off'
       },
@@ -68,15 +68,16 @@ export default function Serch() {
       allowOutsideClick: () => !Swal.isLoading()
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-          'รหัสผ่านถูกต้อง',
-          'กดตกลงเพื่อเข้าดูข้อมูลคนไข้',
-          'success'
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'รหัสผ่านถูกต้อง',
+          showConfirmButton: false,
+          timer: 1000
+        }
         ).then(
           (result) =>{
-            if(result.isConfirmed){
               window.location.href = '/patient'
-            }
           }
         )
       }
@@ -108,6 +109,24 @@ export default function Serch() {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+              <td><button className="moreinfo-button" onClick={infor_click}>ดูข้อมูล</button></td>
+            </tr>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+              <td><button className="moreinfo-button" onClick={infor_click}>ดูข้อมูล</button></td>
+            </tr>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+              <td><button className="moreinfo-button" onClick={infor_click}>ดูข้อมูล</button></td>
+            </tr>
             <tr>
               <td>415151</td>
               <td>dasdcasc</td>
