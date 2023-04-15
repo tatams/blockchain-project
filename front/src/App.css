@@ -1,17 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Prompt:wght@200;300&family=Varela+Round&display=swap'); */
 
-/* *{
+*{
   box-sizing: border-box;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Varela Round', sans-serif;
-
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Prompt', sans-serif;
-  font-family: 'Varela Round', sans-serif;
-} */
+}
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Prompt&family=Tilt+Neon&display=swap');
 *{
@@ -64,6 +56,63 @@ body{
 .navbar_logout{
   cursor: pointer;
 }
+
+.login{
+  background-color: white;
+  margin: 30vh auto;
+  padding: 3rem;
+  border-radius: 60px;
+  bottom: 0;
+  width: 30%;
+  text-align: center;
+}
+
+.login input{
+  margin-bottom: 1rem;
+}
+
+.login input[type="text"]{
+  padding: .5rem .75rem;
+  /* width: 20%; */
+}
+
+.login input[type="text"]:focus{
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.login input[type="password"]{
+  padding: .5rem .75rem;
+  /* width: 20%; */
+}
+
+.login input[type="password"]:focus{
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.login-button input[type="submit"]{
+  background-color: #57DAEC;
+  width: 110px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button input[type="submit"]:hover{
+  background-color: #73eafa;
+}
+
+.login h1{
+  margin: 0;
+}
+.login .login-des{
+  margin: 0;
+  margin-bottom: 20px;
+  color: #157B82;
+}
+
 
 .topsection-serch{
   margin: 100px;
@@ -268,7 +317,6 @@ table tr td {
 .patient-tab .tab{
   background: rgb(255, 255, 255);
   padding: 40px;
-  max-width: fit-content;
   order: 1; 
   /* order is position of [] -> 0 1 2 st nd rd */
   display: none;
@@ -293,13 +341,14 @@ table tr td {
 }
 .tab{
   box-shadow: 0 0.4rem 0.9rem ;
+  box-sizing:content-box;
+  /* border: solid #5B6DCD 10px; */
+  width: 100%;
 }
 
 .intab{
   display: grid;
   grid-template-columns: 20% 20%;
-  /* display: flex; */
-  /* width: 76rem */
 }
 
 .patient-table-intab table{

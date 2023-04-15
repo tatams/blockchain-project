@@ -5,34 +5,41 @@ import NavBar from './Navbar';
 import Register from './register';
 import Serch from './serch';
 import Patient from './patient_information';
+import NavBar_login from './Navbar-login';
+import { login_status } from './login';
+import Login from './login';
 
 function App() {
-  let login = false;
+  const login = true;
   if(login){
-
+    return (
+      <div className="App">
+        <BrowserRouter>
+        <NavBar/>
+        <div className="layout">
+        <Routes>
+          <Route path="/" element={<Serch/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/patient" element={<Patient/>}/>
+        </Routes>
+        </div>
+      </BrowserRouter>
+      </div>
+      )
   }
   else{
-
-  }
-
-  return (
-    <div className="App">
-      <BrowserRouter>
-      <NavBar/>
-      <div className="layout">
-      <Routes>
-        <Route path="/" element={<Serch/>}/>
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/patient" element={<Patient/>}/>
-        <Route path="/patient/Profile" element={''}/>
-        <Route path="/patient/HomeAddress" element={''}/>
-        <Route path="/patient/ListDocter" element={''}/>
-        <Route path="/patient/Note" element={''}/>
-
-      </Routes>
+    return(
+      <div className="App">
+        <BrowserRouter>
+        <NavBar_login/>
+        <div className="layout">
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+        </Routes>
+        </div>
+      </BrowserRouter>
       </div>
-    </BrowserRouter>
-    </div>
     )
+  }
 }
 export default App;

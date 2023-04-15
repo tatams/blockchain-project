@@ -75,15 +75,6 @@ export default function Patient() {
         <label for="tab1">ส่วนตัว</label>
         <div class="tab">
           <h2>ส่วนตัว</h2>
-          <p>
-            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
-            to the software market was 2015, and since then, it has gained
-            popularity with its wide application area. The features of Ember.js
-            support two-way data binding and hence, establish a reliable
-            platform for handling the complicated User Interfaces. Popular
-            websites like LinkedIn, Netflix, Nordstrom, and many more use the
-            Ember.JS platform for their websites.
-          </p>
           <div className="intab">
             <div className="patient-table-intab">
             <table>
@@ -124,15 +115,6 @@ export default function Patient() {
         <label for="tab2">ที่อยู่</label>
         <div class="tab">
           <h2>ที่อยู่</h2>
-          <p>
-            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
-            to the software market was 2015, and since then, it has gained
-            popularity with its wide application area. The features of Ember.js
-            support two-way data binding and hence, establish a reliable
-            platform for handling the complicated User Interfaces. Popular
-            websites like LinkedIn, Netflix, Nordstrom, and many more use the
-            Ember.JS platform for their websites.
-          </p>
           <div className="intab">
             <div className="patient-table-intab">
             <table>
@@ -165,15 +147,6 @@ export default function Patient() {
         <label for="tab3">ข้อมูลทางการแพทย์</label>
         <div class="tab">
           <h2>ข้อมูลทางการแพทย์</h2>
-          <p>
-            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
-            to the software market was 2015, and since then, it has gained
-            popularity with its wide application area. The features of Ember.js
-            support two-way data binding and hence, establish a reliable
-            platform for handling the complicated User Interfaces. Popular
-            websites like LinkedIn, Netflix, Nordstrom, and many more use the
-            Ember.JS platform for their websites.
-          </p>
           <div className="intab">
             <div className="patient-table-intab">
             <table>
@@ -206,15 +179,6 @@ export default function Patient() {
         <label for="tab4">รายการพบแพทย์</label>
         <div class="tab">
           <h2>รายการพบแพทย์</h2>
-          <p>
-            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
-            to the software market was 2015, and since then, it has gained
-            popularity with its wide application area. The features of Ember.js
-            support two-way data binding and hence, establish a reliable
-            platform for handling the complicated User Interfaces. Popular
-            websites like LinkedIn, Netflix, Nordstrom, and many more use the
-            Ember.JS platform for their websites.
-          </p>
           <div className="intab-docter">
             <div className="patient-doctertable-intab">
               <table>
