@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Prompt:wght@200;300&family=Varela+Round&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300&family=Montserrat:wght@100&family=Prompt:wght@200;300&family=Varela+Round&display=swap'); */
 
-*{
+/* *{
   box-sizing: border-box;
   font-family: 'Heebo', sans-serif;
   font-family: 'Montserrat', sans-serif;
@@ -11,8 +11,12 @@
   font-family: 'Montserrat', sans-serif;
   font-family: 'Prompt', sans-serif;
   font-family: 'Varela Round', sans-serif;
-}
+} */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Prompt&family=Tilt+Neon&display=swap');
+*{
+  font-family: 'Prompt', sans-serif;
+}
 body{
   margin: 0;
   background-color: #BDF2ED;
@@ -27,6 +31,7 @@ body{
   gap: 1rem;
   padding: .50rem 1rem;
   user-select: none;
+  align-items: center;
 }
 
 .navbar a {
@@ -76,9 +81,9 @@ input:focus{
 
 button {
   background-color: #75DFF6;
-  padding: 10px;
-  font-size: 16px;
-  margin-right: -1px;
+  padding: 11px 20px;
+  font-size: 17px;
+  margin-left: -1px;
 	user-select: none;
   border: 1px solid #000000;
   cursor: pointer;
@@ -88,11 +93,76 @@ button {
   background-color: white;
   margin: 4rem;
   padding: 3rem;
-  border-radius: 60px 60px 0px 0px;
+  border-radius: 60px 60px 60px 60px;
   /* position: absolute;
   bottom: 0;
   min-height: calc(100% - 15rem);
   margin: 0 calc(20%); */
+}
+
+.register-head{
+  font-size: 20px;
+  background-color: #E5FDFD;
+  padding: 5px 15px;
+  margin: 0.5rem  0rem 0rem 2rem;
+  border-radius: 10px;
+  width:max-content;
+}
+
+.register{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0rem  0rem 0rem 2rem;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.register input{
+  padding: .5rem .75rem;
+  width: 60%;
+}
+
+.register input[type="text"]:focus{
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.register textarea{
+  padding: .5rem .75rem;
+  width: 60%;
+  font-size: 16px;
+}
+
+.register textarea:focus{
+  border: 1px solid #57DAEC;
+}
+
+.register select{
+  padding: .5rem .25rem;
+  width:max-content;
+  font-size: 16px;
+}
+
+.register_space{
+  margin-right: 20px;
+}
+
+.save-button {
+  text-align: right;
+}
+
+.save-button input[type="submit"]{
+  background-color: #57DAEC;
+  width: 140px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.save-button input[type="submit"]:hover{
+  background-color: #73eafa;
+
 }
 
 .patient{
@@ -107,10 +177,6 @@ button {
   align-items: center;
   display: grid;
   grid-template-columns: 20% 80%;
-}
-
-.patient-table{
-
 }
 
 table{
@@ -155,7 +221,7 @@ table tr td {
 
 .patient-table table{
   border-collapse:separate;
-  width: 20%
+  width: 30%
 }
 
 .patient-table table tr{
@@ -192,7 +258,8 @@ table tr td {
   overflow-x: auto;
   padding: 15px 25px;
   border-radius: 0px 0px 0px 0px;
-  background:#DCF7F5;
+  /* background:#DCF7F5; */
+  background:#e8f8f6;
   cursor: pointer;
   /* width: 25%; */
 }
@@ -213,7 +280,8 @@ table tr td {
 }
 
 .patient-tab input[type="radio"]:checked + label{
-  background:#7FEEE8;
+  /* background:#7FEEE8; */
+  background:hsl(177, 100%, 82%);
   color: black;
   border-bottom: 3px solid #29B8D8!important;
   
@@ -224,14 +292,14 @@ table tr td {
   
 }
 .tab{
-  box-shadow: 0 0.5rem 0.8rem ;
+  box-shadow: 0 0.4rem 0.9rem ;
 }
 
 .intab{
   display: grid;
   grid-template-columns: 20% 20%;
   /* display: flex; */
-  width: 76rem
+  /* width: 76rem */
 }
 
 .patient-table-intab table{
@@ -259,10 +327,27 @@ table tr td {
   /* padding: 5px 0px 5px 10px; */
 }
 
+
+
 h1{
-  margin: 3rem  0rem 0rem 4rem;
+  margin: 1rem  0rem 0rem 2rem;
+  font-size: 35px;
 }
 
 h2 {
 	font-size: 35px;
+}
+
+h3{
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.style1{
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin-right: 30%;
+  height: 3px;
+  background: #000000;
 }

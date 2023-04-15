@@ -75,6 +75,15 @@ export default function Patient() {
         <label for="tab1">ส่วนตัว</label>
         <div class="tab">
           <h2>ส่วนตัว</h2>
+          <p>
+            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
+            to the software market was 2015, and since then, it has gained
+            popularity with its wide application area. The features of Ember.js
+            support two-way data binding and hence, establish a reliable
+            platform for handling the complicated User Interfaces. Popular
+            websites like LinkedIn, Netflix, Nordstrom, and many more use the
+            Ember.JS platform for their websites.
+          </p>
           <div className="intab">
             <div className="patient-table-intab">
             <table>
@@ -115,6 +124,15 @@ export default function Patient() {
         <label for="tab2">ที่อยู่</label>
         <div class="tab">
           <h2>ที่อยู่</h2>
+          <p>
+            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
+            to the software market was 2015, and since then, it has gained
+            popularity with its wide application area. The features of Ember.js
+            support two-way data binding and hence, establish a reliable
+            platform for handling the complicated User Interfaces. Popular
+            websites like LinkedIn, Netflix, Nordstrom, and many more use the
+            Ember.JS platform for their websites.
+          </p>
           <div className="intab">
             <div className="patient-table-intab">
             <table>
@@ -148,13 +166,13 @@ export default function Patient() {
         <div class="tab">
           <h2>ข้อมูลทางการแพทย์</h2>
           <p>
-            Though developed in the year 2016, this{" "}
-            <a href="https://vuejs.org/">JavaScript framework</a> has already
-            made its way into the market and has proven its worth by offering
-            various features. Its dual integration mode is one of the most
-            attractive features for creating high-end SPA or Single Page
-            Application.It is a much reliable platform for developing
-            cross-platform.
+            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
+            to the software market was 2015, and since then, it has gained
+            popularity with its wide application area. The features of Ember.js
+            support two-way data binding and hence, establish a reliable
+            platform for handling the complicated User Interfaces. Popular
+            websites like LinkedIn, Netflix, Nordstrom, and many more use the
+            Ember.JS platform for their websites.
           </p>
           <div className="intab">
             <div className="patient-table-intab">
@@ -197,21 +215,47 @@ export default function Patient() {
             websites like LinkedIn, Netflix, Nordstrom, and many more use the
             Ember.JS platform for their websites.
           </p>
-        </div>
-
-        <input type="radio" name="tabs" id="tab5" />
-        <label for="tab5">บันทึกผู้ป่วย</label>
-        <div class="tab">
-          <h2>บันทึกผู้ป่วย</h2>
-          <p>
-            The introduction of <a href="https://www.emberjs.com/">Ember.js</a>{" "}
-            to the software market was 2015, and since then, it has gained
-            popularity with its wide application area. The features of Ember.js
-            support two-way data binding and hence, establish a reliable
-            platform for handling the complicated User Interfaces. Popular
-            websites like LinkedIn, Netflix, Nordstrom, and many more use the
-            Ember.JS platform for their websites.
-          </p>
+          <div className="intab-docter">
+            <div className="patient-doctertable-intab">
+              <table>
+          <thead>
+            <tr className="doctertable-head">
+              <th width="20%">แพทย์ผู้รักษา</th>
+              <th width="60%">ประวัติการรักษา</th>
+              <th width="20%">วันที่</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+            </tr>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+            </tr>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+            </tr>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+            </tr>
+            <tr>
+              <td>415151</td>
+              <td>dasdcasc</td>
+              <td>dcdscsd</td>
+            </tr>
+          </tbody>
+        </table>
+            </div>
+          
+          </div>
         </div>
         </div>
       </div>

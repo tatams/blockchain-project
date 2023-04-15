@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass }  from "@fortawesome/free-solid-svg-icons";
 
 export default function Serch() {
     const [PatientName, setPatientName] = useState();
@@ -43,7 +45,7 @@ export default function Serch() {
       title: 'รหัสผ่าน',
       input: 'password',
       inputAttributes: {
-        autocapitalize: 'off'
+        autocapitalize: 'off',
       },
       cancelButtonText: 'ยกเลิก',
       cancelButtonColor: '#DC3545',
@@ -95,7 +97,7 @@ export default function Serch() {
           size="40"
         ></input>
         <button onClick={serch_click} id="serch-button">
-          ค้นหา
+        <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
       </div>
       <div className="bottomsection-serch">

@@ -1,24 +1,54 @@
 export default function Register(){
     return(
         <div>
-        <h1>ลงทะเบียนผู้ป่วยใหม่</h1>
         <div className="patient">
-            เลขบัตรประชาชน <input type="text"></input><br></br>
-            ชื่อ <input type="text"></input>  นามสกุล <input type="text"></input><br></br>
-            วันเดือนปีเกิด <input type="date"></input>  ศาสนา <input type="text"></input>
-            เพศ <select>
-                <option>กรุณาเลือก</option>
-                <option>หญิง</option>
-                <option>ชาย</option>
-                <option>อื่นๆ</option>
+        <h1>ลงทะเบียนผู้ป่วยใหม่</h1>
+        <div className="register-head">ข้อมูลผู้ป่วย</div>
+            <form>
+                <div className="register">
+                <div>
+                    <h3>ส่วนตัว</h3>
+                    <hr className="style1"></hr>
+                    คำนำหน้าชื่อ <select name="artical" className="register_space" required>
+                <option value="" disableed selected>กรุณาเลือก</option>
+                <option value="Mr">นาย</option>
+                <option value="Mrs">นาง</option>
+                <option value="Miss">นางสาว</option>
                 </select>
-            อาชีพ <input type="text"></input><br></br>
-        หมู่เลือด <input type="text"></input><br></br>
-        อาการเบื้องต้น<br></br><textarea></textarea><br></br>
-        บ้านเลขที่ <input type="text"></input> หมู่ <input type="text"></input> <br></br>
-        ตำบล <input type="text"></input> อำเภอ <input type="text"></input> จังหวัด <input type="text"></input> รหัสไปรษณีย์ <input type="text"></input> <br></br>
-        โทรศัพท์ <input type="text"></input><br></br>
-        <input type="submit" value="ตกลง"></input>
+                เพศ <select name="gender" required>
+                <option value="" disableed selected>กรุณาเลือก</option>
+                <option value="female">หญิง</option>
+                <option value="male">ชาย</option>
+                </select><br></br>
+                    ชื่อ <br></br><input type="text" name="firstname" required></input><br></br>
+                    นามสกุล <br></br><input type="text" name="lastname" required></input><br></br>
+                วันเดือนปีเกิด <br></br><input type="date" name="dob" required></input><br></br>
+                เลขบัตรประชาชน <br></br><input type="text" name="idCardNo" required></input><br></br>
+                เชื้อชาติ <br></br><input type="text" name="ethnicity" required></input><br></br>
+                สัญชาติ <br></br><input type="text" name="nation" required></input><br></br>
+                ศาสนา <br></br><input type="text" name="religion" required></input><br></br>
+                อาชีพ <br></br><input type="text" name="work" required></input><br></br>
+                </div>
+                <div>
+                    <h3>ที่อยู่</h3>
+                    <hr className="style1"></hr>
+                    ข้อมูลที่อยู่<br></br><textarea name="homedetail" required></textarea><br></br>
+                    ตำบล/แขวง <br></br><input type="text" name="sub_district" required></input><br></br>
+                    อำเภอ/เขต <br></br><input type="text" name="district" required></input><br></br>
+                    จังหวัด <br></br><input type="text" name="province" required></input><br></br>
+                    รหัสไปรษณีย์ <br></br><input type="text" name="zip" required></input><br></br><br></br>
+                    <h3>ข้อมูลทางการแพทย์</h3>
+                    <hr className="style1"></hr>
+                    โรคประจำตัว <br></br><input type="text" name="CongenitalDisease" required></input><br></br>
+                    อาการแพ้ <br></br><input type="text" name="Allergy" required></input><br></br>
+                    หมู่เลือด <br></br><input type="text" name="BloodGroup" required></input><br></br>
+                </div>
+                
+            </div>
+            <div className="save-button">
+            <input type="submit" value="บันทึกข้อมูล"></input>
+            </div>
+            </form>
         </div>
         </div>
         
