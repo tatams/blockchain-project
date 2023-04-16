@@ -1,5 +1,7 @@
 import { useState } from "react";
 import NavBar from "./Navbar";
+// import record from '../ethereum/record';
+// import web3 from '../ethereum/web3';
 
 export default function Register() {
   const [nameTitle,setnameTitle] = useState();
@@ -113,6 +115,26 @@ export default function Register() {
     console.log(event.target.value);
     setdate(event.target.value);
   };
+
+  onSubmit = async event => {
+    event.preventDefault();
+
+    const { id, nameTitle, firstname, lastname, gender, idCardNo, dob, ethnicity, nation, religion, work, homeNo, subDist, dist, province, zip, congenitalDisease, allergy, blood } = this.state;
+    try {
+        const accounts = await web3.eth.getAccounts();
+
+        await record.methods.setDetails(
+          id, nameTitle, firstname, lastname, gender, idCardNo, dob, ethnicity, nation, religion, work, homeNo, subDist, dist, province, zip, congenitalDisease, allergy, blood
+        ).send({ from: accounts[0] });
+
+        alert("Account created successfully!");
+    }
+    catch (err) {
+        alert("Account already exists");
+    }
+
+    this.setState({ id : '', nameTitle : '', firstname : '', lastname : '', gender : '', idCardNo : '', dob : '', ethnicity : '', nation : '', religion : '', work : '', homeNo : '', subDist : '', dist : '', province : '', zip : '', congenitalDisease : '', allergy : '', blood : ''});
+}
   
   return (
     <div>
@@ -120,7 +142,7 @@ export default function Register() {
       <div className="patient">
         <h1>ลงทะเบียนผู้ป่วยใหม่</h1>
         <div className="register-head">ข้อมูลผู้ป่วย</div>
-        <form>
+        <form onSubmit={this.onSubmit}>
           <div className="register">
             <div>
               <h3>ส่วนตัว</h3>
