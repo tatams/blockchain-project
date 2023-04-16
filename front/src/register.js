@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavBar from "./Navbar";
-// import record from '../ethereum/record';
-// import web3 from '../ethereum/web3';
+import record from '../ethereum/record';
+import web3 from "./ethereum/web3";
 
 export default function Register() {
   const [nameTitle,setnameTitle] = useState();
