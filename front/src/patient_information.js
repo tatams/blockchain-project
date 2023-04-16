@@ -1,10 +1,11 @@
 import { useState } from "react";
+import NavBar from "./Navbar";
 
 export default function Patient() {
   const [PatientName, setPatientName] = useState();
   const [PatientLastname, setPatientLastname] = useState();
   const [WrongInformation, setWrongInformation] = useState(true);
-
+  
   const inputName = (event) => {
     setWrongInformation(true);
     const input = event.target.value;
@@ -29,7 +30,10 @@ export default function Patient() {
       );
     }
   };
+
   return (
+    <div>
+      <NavBar/>
     <div className="patient">
       <div className="patient-top">
         <div>รูปมั้ง</div>
@@ -71,7 +75,7 @@ export default function Patient() {
       <div className="patient-bottom">
 
         <div className="patient-tab">
-        <input type="radio" name="tabs" id="tab1"/>
+        <input type="radio" name="tabs" id="tab1" checked/>
         <label for="tab1">ส่วนตัว</label>
         <div class="tab">
           <h2>ส่วนตัว</h2>
@@ -111,7 +115,7 @@ export default function Patient() {
           </div>
         </div>
 
-        <input type="radio" name="tabs" id="tab2" />
+        <input type="radio" name="tabs" id="tab2" checked/>
         <label for="tab2">ที่อยู่</label>
         <div class="tab">
           <h2>ที่อยู่</h2>
@@ -143,7 +147,7 @@ export default function Patient() {
           </div>
         </div>
 
-        <input type="radio" name="tabs" id="tab3" />
+        <input type="radio" name="tabs" id="tab3" checked/>
         <label for="tab3">ข้อมูลทางการแพทย์</label>
         <div class="tab">
           <h2>ข้อมูลทางการแพทย์</h2>
@@ -175,7 +179,7 @@ export default function Patient() {
           </div>
         </div>
 
-        <input type="radio" name="tabs" id="tab4" />
+        <input type="radio" name="tabs" id="tab4" checked/>
         <label for="tab4">รายการพบแพทย์</label>
         <div class="tab">
           <h2>รายการพบแพทย์</h2>
@@ -223,6 +227,13 @@ export default function Patient() {
         </div>
         </div>
       </div>
+      <br></br>
+      <div className="back-button">
+              <a href="/serch">
+                <input type="button" value="ย้อนกลับ"></input>
+              </a>
+            </div>
+    </div>
     </div>
   );
 }

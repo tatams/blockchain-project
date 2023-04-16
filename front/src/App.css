@@ -91,7 +91,7 @@ body{
   border-radius: 2px;
 }
 
-.login-button input[type="submit"]{
+.login-button button[type="submit"]{
   background-color: #57DAEC;
   width: 110px;
   border-radius: 20px;
@@ -100,8 +100,13 @@ body{
   cursor: pointer;
 }
 
-.login-button input[type="submit"]:hover{
+.login-button button[type="submit"]:hover{
   background-color: #73eafa;
+}
+
+.login-button a {
+  text-decoration: none;
+  color: black;
 }
 
 .login h1{
@@ -226,6 +231,7 @@ button {
   align-items: center;
   display: grid;
   grid-template-columns: 20% 80%;
+  margin-bottom: 20px;
 }
 
 table{
@@ -318,9 +324,7 @@ table tr td {
   background: rgb(255, 255, 255);
   padding: 40px;
   order: 1; 
-  /* order is position of [] -> 0 1 2 st nd rd */
   display: none;
-  
 }
 
 .patient-tab input[type="radio"]:checked + label + .tab{
@@ -337,8 +341,8 @@ table tr td {
 .patient-tab label:hover{
   color: #29B8D8;
   border-bottom: 2px solid #29B8D8!important;
-  
 }
+
 .tab{
   box-shadow: 0 0.4rem 0.9rem ;
   box-sizing:content-box;
@@ -399,4 +403,23 @@ h3{
   margin-right: 30%;
   height: 3px;
   background: #000000;
+}
+
+.button-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button a input[type="button"]{
+  background-color: #57DAEC;
+  width: 140px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.back-button a input[type="button"]:hover{
+  background-color: #73eafa;
+
 }

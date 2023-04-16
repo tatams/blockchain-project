@@ -10,36 +10,20 @@ import { login_status } from './login';
 import Login from './login';
 
 function App() {
-  const login = true;
-  if(login){
     return (
       <div className="App">
         <BrowserRouter>
-        <NavBar/>
+        {/* <NavBar/> */}
         <div className="layout">
         <Routes>
-          <Route path="/" element={<Serch/>}/>
+          <Route path="/Serch" element={<Serch/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/patient" element={<Patient/>}/>
-        </Routes>
-        </div>
-      </BrowserRouter>
-      </div>
-      )
-  }
-  else{
-    return(
-      <div className="App">
-        <BrowserRouter>
-        <NavBar_login/>
-        <div className="layout">
-        <Routes>
           <Route path="/" element={<Login/>}/>
         </Routes>
         </div>
       </BrowserRouter>
       </div>
-    )
-  }
+      )
 }
 export default App;

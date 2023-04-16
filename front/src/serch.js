@@ -2,6 +2,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass }  from "@fortawesome/free-solid-svg-icons";
+import NavBar from "./Navbar";
 
 export default function Serch() {
     const [PatientName, setPatientName] = useState();
@@ -87,6 +88,8 @@ export default function Serch() {
   }
 
   return (
+    <div>
+      <NavBar/>
     <div className="serch">
       <div className="topsection-serch">
         <input
@@ -144,6 +147,7 @@ export default function Serch() {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 }
