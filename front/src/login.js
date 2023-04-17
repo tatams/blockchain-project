@@ -57,6 +57,7 @@ export default function Login() {
     axios.post("http://localhost:5000/login-check",{ user: Name, pwd: Pass})
     .then( res =>{
       if(res.data.success){
+        console.log("success");
         Swal.fire({
           position: 'center',
           icon: 'success',
@@ -64,12 +65,15 @@ export default function Login() {
           showConfirmButton: false,
           timer: 1000
         }
+       
         ).then(
           (result) =>{
               window.location.href = '/serch'
+              
           }
         )
       }else{
+        console.log("unsuccess");
         Swal.fire({
           icon: 'error',
           title: 'ไม่สามารถเข้าระบบได้',
