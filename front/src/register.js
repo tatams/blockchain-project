@@ -43,11 +43,16 @@ export default function Register() {
     console.log(accounts[0]);
     // Form.addr = accounts[0];
     console.log(Form);
-    await record.methods.setDetails(
-      Form
-      // nameTitle, firstname, lastname, gender, idCardNo, dob, ethnicity, nation, religion, work, homeNo, subDist, dist, province, zip, congenitalDisease, allergy, blood
-    ).send({ from: accounts[0] });
-    
+    // await record.methods.setDetails(
+    //   Form
+    //   // nameTitle, firstname, lastname, gender, idCardNo, dob, ethnicity, nation, religion, work, homeNo, subDist, dist, province, zip, congenitalDisease, allergy, blood
+    // ).send({ from: accounts[0] });
+    const gasPriceInWei = web3.utils.toWei("10", "gwei");
+    await record.methods.setDetails(Form).send({
+    from: accounts[0],
+    gasPrice: gasPriceInWei,
+    gasLimit: 3000000
+})  ;
   }
 
   // const [nameTitle,setnameTitle] = useState();
