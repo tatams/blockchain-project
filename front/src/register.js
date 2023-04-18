@@ -51,7 +51,7 @@ export default function Register() {
     await record.methods.setDetails(Form).send({
     from: accounts[0],
     gasPrice: gasPriceInWei,
-    gasLimit: 3000000
+    gasLimit: 300000
 })  ;
   }
 
