@@ -49,7 +49,7 @@ export default function Patient() {
       <NavBar/>
     <div className="patient">
       <div className="patient-top">
-        <div>รูปมั้ง</div>
+        <div></div>
         <div>
           <div className="patient-table">
             <table>

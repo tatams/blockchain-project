@@ -8,7 +8,7 @@ export default function NavBar() {
         <ul>
         <a href="/register" className="navbar_register">ลงทะเบียนผู้ป่วยใหม่</a>
             <li>
-                <div className="navbar_account">ชื่อพยาบาล</div>
+            <a href="" className="navbar_home"><div className="navbar_account">นางสมฤดี รักสะอาด</div></a>
             </li>
             <li>
             <a href="/" className="navbar_logout">ออกจากระบบ</a>

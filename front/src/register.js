@@ -48,18 +48,18 @@ export default function Register() {
     //   // nameTitle, firstname, lastname, gender, idCardNo, dob, ethnicity, nation, religion, work, homeNo, subDist, dist, province, zip, congenitalDisease, allergy, blood
     // ).send({ from: accounts[0] });
     const gasPriceInWei = web3.utils.toWei("10", "gwei");
-    record.methods.patientList(0).call({ from: accounts[0] }).then(
-      (a) =>{
-        console.log("a : "+a)
-      }
-    ).catch((error) =>{
-      console.log("err :" +error);
-    })
+    // record.methods.patientList(0).call({ from: accounts[0] }).then(
+    //   (a) =>{
+    //     console.log("a : "+a)
+    //   }
+    // ).catch((error) =>{
+    //   console.log("err :" +error);
+    // })
     
     await record.methods.setDetails(Form).send({
     from: accounts[0],
     gasPrice: gasPriceInWei,
-    gasLimit: 300000
+    gasLimit: 3000000
 })  ;
   }
 
@@ -327,7 +327,7 @@ export default function Register() {
             </div>
             <div className="save-button">
               {/* <input type="submit" value="บันทึกข้อมูล" onClick={submit}></input> */}
-              <input type="submit"></input>
+              <input type="submit" value="บันทึกข้อมูล"></input>
             </div>
           </div>
         </form>
